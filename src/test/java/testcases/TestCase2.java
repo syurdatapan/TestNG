@@ -39,6 +39,7 @@ public class TestCase2 {
 		// 7. Verify 'SEARCHED PRODUCTS' is visible
 		WebElement searchedProductsElement = driver.findElement(By.xpath("//h2[text()='Searched Products']"));
 		softAssert.assertTrue(searchedProductsElement.isDisplayed());
+		softAssert.assertAll();
 	}
 
 	@Test(dependsOnMethods = "searchProduct")
